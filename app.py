@@ -23,4 +23,8 @@ def prediction(area_mean:float, concavity_mean:float, concave points_mean:float,
         return {'This patient is having breast cancer'}
 
 
+ if __name__ == "__main__":
+    uvicorn.run("deployment.app:app", port='127.0.0.1', host='8000')       
+
+
 
